@@ -19,6 +19,25 @@ class HappinessViewController: UIViewController, FaceViewDataSource
         }
     }
     
+    private struct Constants {
+        static let HappinessGestureScale: CGFloat = 4
+    }
+    
+    @IBAction func changeHappiness(_ gesture: UIPanGestureRecognizer) {
+        switch gesture.state {
+        case .ended:
+            fallthrough
+        case .changed:
+            let translation = gesture.translation(in: faceView)
+            let happinessChange = -Int(translation.y / Constants.HappinessGestureScale)
+            if happinessChange != 0 {
+                happiness += happinessChange
+                gesture.setTranslation(.zero, in: faceView)
+            }
+        default:
+            break
+        }
+    }
     
     // the tiny model:)
     var happiness: Int = 0 { // 0 = very sad, 100 = ecstatic

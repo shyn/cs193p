@@ -33,12 +33,20 @@
                                 <real key="value" value="0.80000000000000004"/>
                             </userDefinedRuntimeAttribute>
                         </userDefinedRuntimeAttributes>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="mOh-yV-Adg" appends="YES" id="BZQ-zh-HqX"/>
+                        </connections>
                     </view>
                     <connections>
                         <outlet property="faceView" destination="btL-6G-be8" id="NUF-zk-MA0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Opt-w1-fih" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="mOh-yV-Adg">
+                    <connections>
+                        <action selector="changeHappiness:" destination="7ME-am-8Na" id="j6Y-uN-yep"/>
+                    </connections>
+                </panGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="-853" y="-41"/>
         </scene>
