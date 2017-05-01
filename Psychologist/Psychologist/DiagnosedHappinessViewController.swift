@@ -10,7 +10,7 @@ import UIKit
 
 // to get HappinessViewController untouched we dedrived it.
 // keep faceView generatic
-class DiagnosedHappinessViewController: HappinessViewController
+class DiagnosedHappinessViewController: HappinessViewController, UIPopoverPresentationControllerDelegate
 {
     override var happiness: Int {
         didSet {
@@ -35,16 +35,25 @@ class DiagnosedHappinessViewController: HappinessViewController
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if let hvc = segue.destination as? TextViewController {
             if let identifier = segue.identifier {
                 switch identifier {
                 case History.SegueIdentifier:
+                    if let hvc = segue.destination as? TextViewController {
+                        if let ppc = hvc.popoverPresentationController {
+                            ppc.delegate = self
+                        }
                     hvc.text = "\(diagnosticHistory)"
+                    }
                 default:
                     break
                 }
             }
-        }
+        
     
+    }
+    
+    // prevent popover to adape the screen (medal)
+    func adaptivePresentationStyle(for controller: UIPresentationController) -> UIModalPresentationStyle {
+        return .none
     }
 }

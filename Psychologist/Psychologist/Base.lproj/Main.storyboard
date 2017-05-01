@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="X3c-xx-Fdy">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina3_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -32,17 +32,17 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="昨晚你夢到了什麼？" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QMS-eC-TQa">
-                                <rect key="frame" x="16" y="64" width="343" height="30"/>
+                                <rect key="frame" x="16" y="64" width="288" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oQI-dI-WDT">
-                                <rect key="frame" x="167" y="315" width="41" height="36"/>
+                                <rect key="frame" x="139.5" y="222" width="41" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="故人"/>
                                 <connections>
@@ -50,7 +50,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="06Q-dN-tRi">
-                                <rect key="frame" x="167" y="359" width="40" height="36"/>
+                                <rect key="frame" x="139.5" y="266" width="40" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="meh"/>
                                 <connections>
@@ -58,7 +58,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="acn-JS-pJX">
-                                <rect key="frame" x="167" y="271" width="41" height="36"/>
+                                <rect key="frame" x="139.5" y="178" width="41" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="遊戲"/>
                                 <connections>
@@ -66,7 +66,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rlX-Ch-XL1">
-                                <rect key="frame" x="153" y="403" width="69" height="36"/>
+                                <rect key="frame" x="125.5" y="310" width="69" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="nothing"/>
                                 <connections>
@@ -107,7 +107,7 @@
                         <viewControllerLayoutGuide type="bottom" id="xKY-Lg-abH"/>
                     </layoutGuides>
                     <view key="view" contentMode="redraw" id="Afh-Av-R5R" customClass="FaceView" customModule="Psychologist" customModuleProvider="target">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
@@ -160,20 +160,19 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Map-1B-Sm7">
-                                <rect key="frame" x="16" y="20" width="343" height="128"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="你好，popup！" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Map-1B-Sm7">
+                                <rect key="frame" x="16" y="20" width="343" height="639"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="Shf-T4-8Gb" firstAttribute="top" secondItem="Map-1B-Sm7" secondAttribute="bottom" constant="519" id="OIQ-N1-XbQ"/>
-                            <constraint firstItem="Map-1B-Sm7" firstAttribute="top" secondItem="NcU-tW-qX7" secondAttribute="bottom" id="UPR-TS-kUC"/>
-                            <constraint firstItem="Map-1B-Sm7" firstAttribute="trailing" secondItem="Erd-mG-09m" secondAttribute="trailingMargin" id="UlJ-hv-I3y"/>
-                            <constraint firstItem="Map-1B-Sm7" firstAttribute="leading" secondItem="Erd-mG-09m" secondAttribute="leadingMargin" id="mNE-hx-5O2"/>
+                            <constraint firstItem="Map-1B-Sm7" firstAttribute="top" secondItem="NcU-tW-qX7" secondAttribute="bottom" id="HBR-PY-p4W"/>
+                            <constraint firstItem="Map-1B-Sm7" firstAttribute="trailing" secondItem="Erd-mG-09m" secondAttribute="trailingMargin" id="fgW-d7-qr7"/>
+                            <constraint firstItem="Shf-T4-8Gb" firstAttribute="top" secondItem="Map-1B-Sm7" secondAttribute="bottom" constant="8" symbolic="YES" id="peE-IA-L77"/>
+                            <constraint firstItem="Map-1B-Sm7" firstAttribute="leading" secondItem="Erd-mG-09m" secondAttribute="leadingMargin" id="uyt-II-NRs"/>
                         </constraints>
                     </view>
                     <connections>
@@ -182,7 +181,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WOH-al-KRM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="569" y="-433"/>
+            <point key="canvasLocation" x="568.79999999999995" y="-433.13343328335833"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="oaY-5W-xhV">
