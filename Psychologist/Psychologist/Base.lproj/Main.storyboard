@@ -49,6 +49,14 @@
                                     <segue destination="OB2-2w-CKg" kind="showDetail" identifier="happy" id="ODR-Ji-4GU"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="06Q-dN-tRi">
+                                <rect key="frame" x="167" y="359" width="40" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="meh"/>
+                                <connections>
+                                    <segue destination="OB2-2w-CKg" kind="showDetail" identifier="" id="ekX-vP-Xcl"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="acn-JS-pJX">
                                 <rect key="frame" x="167" y="271" width="41" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
@@ -57,12 +65,12 @@
                                     <segue destination="OB2-2w-CKg" kind="showDetail" identifier="killed" id="elh-9d-CRV"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="06Q-dN-tRi">
-                                <rect key="frame" x="167" y="359" width="40" height="36"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rlX-Ch-XL1">
+                                <rect key="frame" x="153" y="403" width="69" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="meh"/>
+                                <state key="normal" title="nothing"/>
                                 <connections>
-                                    <segue destination="OB2-2w-CKg" kind="showDetail" identifier="" id="ekX-vP-Xcl"/>
+                                    <action selector="nothing:" destination="BYZ-38-t0r" eventType="touchUpInside" id="z8r-av-UiI"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -72,14 +80,19 @@
                             <constraint firstItem="QMS-eC-TQa" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="3Rb-8U-4rz"/>
                             <constraint firstItem="oQI-dI-WDT" firstAttribute="top" secondItem="acn-JS-pJX" secondAttribute="bottom" constant="8" symbolic="YES" id="4K3-Am-FAy"/>
                             <constraint firstItem="oQI-dI-WDT" firstAttribute="centerX" secondItem="acn-JS-pJX" secondAttribute="centerX" id="DlA-IG-BKE"/>
+                            <constraint firstItem="rlX-Ch-XL1" firstAttribute="centerX" secondItem="06Q-dN-tRi" secondAttribute="centerX" id="JqM-QV-ttE"/>
                             <constraint firstItem="QMS-eC-TQa" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="M9Z-S5-syg"/>
                             <constraint firstItem="oQI-dI-WDT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="VOh-La-K0y"/>
                             <constraint firstItem="oQI-dI-WDT" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="ZW1-47-kld"/>
+                            <constraint firstItem="rlX-Ch-XL1" firstAttribute="top" secondItem="06Q-dN-tRi" secondAttribute="bottom" constant="8" symbolic="YES" id="g3j-b3-1gz"/>
                             <constraint firstItem="06Q-dN-tRi" firstAttribute="centerX" secondItem="oQI-dI-WDT" secondAttribute="centerX" id="g3l-mz-DfU"/>
                             <constraint firstItem="06Q-dN-tRi" firstAttribute="top" secondItem="oQI-dI-WDT" secondAttribute="bottom" constant="8" symbolic="YES" id="kgi-lq-iY9"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="弗洛伊德" id="PSp-co-7zG"/>
+                    <connections>
+                        <segue destination="OB2-2w-CKg" kind="showDetail" identifier="nothing" id="Mfa-sF-uyt"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -165,6 +178,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="n5t-JI-D9b"/>
+        <segue reference="Mfa-sF-uyt"/>
     </inferredMetricsTieBreakers>
 </document>
