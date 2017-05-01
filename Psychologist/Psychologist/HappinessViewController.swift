@@ -50,6 +50,7 @@ class HappinessViewController: UIViewController, FaceViewDataSource
     // we add a ? here to make sure that when called from prepareSegue when IBOutlets all not defined, program don't crash
     func updateUI() {
         faceView?.setNeedsDisplay()
+        title = "\(happiness)"
     }
     func smilinessForFaceView(sender: FaceView) -> Double? {
         return Double(happiness-50)/50

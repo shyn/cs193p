@@ -16,7 +16,7 @@
                 <splitViewController id="X3c-xx-Fdy" sceneMemberID="viewController">
                     <connections>
                         <segue destination="tHV-dV-iaw" kind="relationship" relationship="masterViewController" id="ho8-jk-PrQ"/>
-                        <segue destination="ZU6-oh-wac" kind="relationship" relationship="detailViewController" id="n5t-JI-D9b"/>
+                        <segue destination="OB2-2w-CKg" kind="relationship" relationship="detailViewController" id="n5t-JI-D9b"/>
                     </connections>
                 </splitViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IuV-X1-8h7" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -46,7 +46,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="故人"/>
                                 <connections>
-                                    <segue destination="ZU6-oh-wac" kind="showDetail" identifier="happy" id="ODR-Ji-4GU"/>
+                                    <segue destination="OB2-2w-CKg" kind="showDetail" identifier="happy" id="ODR-Ji-4GU"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="acn-JS-pJX">
@@ -54,7 +54,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="遊戲"/>
                                 <connections>
-                                    <segue destination="ZU6-oh-wac" kind="showDetail" identifier="killed" id="elh-9d-CRV"/>
+                                    <segue destination="OB2-2w-CKg" kind="showDetail" identifier="killed" id="elh-9d-CRV"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="06Q-dN-tRi">
@@ -62,7 +62,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="meh"/>
                                 <connections>
-                                    <segue destination="ZU6-oh-wac" kind="showDetail" identifier="" id="ekX-vP-Xcl"/>
+                                    <segue destination="OB2-2w-CKg" kind="showDetail" identifier="" id="ekX-vP-Xcl"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -113,6 +113,7 @@
                             <outletCollection property="gestureRecognizers" destination="KWu-Rh-XeU" appends="YES" id="ejV-OB-FvU"/>
                         </connections>
                     </view>
+                    <navigationItem key="navigationItem" id="g7g-Jh-acZ"/>
                     <connections>
                         <outlet property="faceView" destination="Afh-Av-R5R" id="A9p-pf-NNq"/>
                     </connections>
@@ -124,7 +125,7 @@
                     </connections>
                 </panGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="-888" y="-191"/>
+            <point key="canvasLocation" x="50.399999999999999" y="-191.1544227886057"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="oaY-5W-xhV">
@@ -144,8 +145,26 @@
             </objects>
             <point key="canvasLocation" x="-862.5" y="-1352.5"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="piW-qZ-vDL">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="OB2-2w-CKg" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="MJ3-3f-zac">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="ZU6-oh-wac" kind="relationship" relationship="rootViewController" id="iJE-mT-8y5"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Akp-lO-6D2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-888.79999999999995" y="-191.1544227886057"/>
+        </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="ekX-vP-Xcl"/>
+        <segue reference="n5t-JI-D9b"/>
     </inferredMetricsTieBreakers>
 </document>
